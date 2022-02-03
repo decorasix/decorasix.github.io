@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Decorasix</title>
+    <link rel="icon" type="image/png" sizes="1440x1439" href="../assets/img/Logo.png">
+    <link rel="icon" type="image/png" sizes="1440x1439" href="../assets/img/Logo.png">
+    <link rel="icon" type="image/png" sizes="1440x1439" href="../assets/img/Logo.png">
+    <link rel="icon" type="image/png" sizes="1440x1439" href="../assets/img/Logo.png">
+    <link rel="icon" type="image/png" sizes="1440x1439" href="../assets/img/Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asul">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.min.css">
+<meta name="facebook-domain-verification" content="r02rcb97yr0wm9cbvdpor56x7qbf99" />
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '443685807420949');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=443685807420949&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+
+
+<!-- Sales Notification -->
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css"/>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"  >
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+<!-- End Sales Notification -->
+</head>
+
+<body><table id="myTable">
+<tr>
+    <th width="100">Name </th>
+    <th>Price</th>
+</tr>
+<tr>
+    <td><span>Pen :</span></td>
+    <td><input type="text" class='txtCal' /></td>
+</tr>    
+<tr>
+    <td><span>Pencil :</span></td>
+    <td><input type="text" class='txtCal' /></td>
+</tr>  
+<tr>
+    <td><span>Eraser :</span></td>
+    <td><input type="text" class='txtCal' /></td>
+</tr>  
+<tr>
+    <td><span>Sharpner :</span></td>
+    <td><input type="text" class='txtCal' /></td>
+</tr>  
+<tr>
+    <td><span>Book :</span></td>
+    <td><input type="text" class='txtCal' /></td>
+</tr>
+<tr>
+    <td><span><b>TOTAL  :</b></span></td>
+    <td><b><span id="total_sum_value"></span></b></td>
+</tr>
+<tr colspan="2">
+    <td colspan="2"><br/><i>Enter values above</i>
+    </td>
+</tr>
+</table><script>
+    // updates total on each entry
+
+$(document).ready(function() {
+
+  $("#myTable").on('input', '.txtCal', function() {
+    var calculated_total_sum = 0;
+
+    $("#myTable .txtCal").each(function() {
+      var get_textbox_value = $(this).val();
+      if ($.isNumeric(get_textbox_value)) {
+        calculated_total_sum += parseFloat(get_textbox_value);
+      }
+    });
+    $("#total_sum_value").html(calculated_total_sum);
+  });
+});
+</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/script.min.js"></script>
+</body>
+
+</html>
