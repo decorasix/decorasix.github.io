@@ -57,6 +57,36 @@ src="https://www.facebook.com/tr?id=443685807420949&ev=PageView&noscript=1"
 	<script type="text/javascript" src="script.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dropdown/2.0.3/jquery.dropdown.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+
+
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
 </head>
 
 <body style="background-color: rgb(237,237,237);"><script>
@@ -196,25 +226,6 @@ src="https://www.facebook.com/tr?id=443685807420949&ev=PageView&noscript=1"
             <h6 class="text-center" style="background-color: #ff4d0;line-height: 25px;font-size: 14px;margin-bottom: 30px;">Chat Admin Untuk Melihat Contoh Desain Lainnya</h6>
         </div>
         <div style="padding: 50px 30px;background-color: #e3e3e3;padding-bottom: 100px;">
-            <section id="faq" style="padding: 2px;margin: 11px;">
-                <hr class="star-dark mb-5">
-                <h2 class="text-uppercase text-center" style="font-size: 48;">FAQ</h2><br >
-                <div class="container">
-                    <div class="faqelement"><button class="btn btn-primary faq on" type="button" style="box-shadow: none;">Questions&nbsp;</button>
-                        <div class="panel">
-                            <p>Answer</p>
-                        </div>
-                    </div><br >
-                    <div class="faqelement"><button class="btn btn-primary faq on" type="button" style="box-shadow: none;">Questions&nbsp;</button>
-                        <div class="panel">
-                            <p>Answer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <hr class="star-dark mb-5">
-                </div>
-            </section>
             <h4 class="text-center" style="font-weight: bold;color: #00a355;margin-bottom: 25px;">Hal Yang Sering Ditanyakan</h4>
             <div>
                 <div class="faqelement" style="border-radius: 10px;margin-bottom: 10px;background-color: #ffffff;"><button class="btn faq on" type="button" style="box-shadow: none;background-color: rgba(255,255,255,0);padding-top: 10px;padding-bottom: 10px;font-weight: bold;color: rgb(119,119,119);"><strong>Bagaimana Cara Pemesanan Video Ucapan Lebaran?</strong></button>
@@ -255,6 +266,59 @@ src="https://www.facebook.com/tr?id=443685807420949&ev=PageView&noscript=1"
     </div>
     </div>
     </div>
+    <div>
+        <div class="faqelement" style="border-radius: 10px;margin-bottom: 10px;background-color: #ffffff;"><button class="btn faq on" type="button" style="box-shadow: none;background-color: rgba(255,255,255,0);padding-top: 10px;padding-bottom: 10px;font-weight: bold;color: rgb(119,119,119);"><strong>Bagaimana Cara Pemesanan Video Ucapan Lebaran?</strong></button>
+            <div
+                class="panel" style="background-color: rgba(255,255,255,0);">
+                <h6 class="text-left" style="font-size: 14px;line-height: 20px;margin-bottom: 15px;">Cara pemesanan klik tombol “Order Sekarang” kemudian pilih tema yang akan dipilih, siapkan foto serta nama dan text ucapan.</h6>
+        </div>
+    </div>
+    <div class="faqelement" style="border-radius: 10px;margin-bottom: 10px;background-color: #ffffff;"><button class="btn faq on" type="button" style="box-shadow: none;background-color: rgba(255,255,255,0);padding-top: 10px;padding-bottom: 10px;font-weight: bold;color: rgb(119,119,119);"><strong>Bagaimana Sistem Pembayarannya ?</strong></button>
+        <div
+            class="panel" style="background-color: rgba(255,255,255,0);">
+            <h6 class="text-left" style="font-size: 14px;line-height: 20px;margin-bottom: 15px;">Untuk layanan jasa desain ini, pembayaran dilakukan 100% di awal melalui transfer bank Mandiri atau BCA. Selanjutnya, kami akan mulai memproses pesanan anda.</h6>
+    </div>
+    </div>
+    <div class="faqelement" style="border-radius: 10px;margin-bottom: 10px;background-color: #ffffff;"><button class="btn faq on" type="button" style="box-shadow: none;background-color: rgba(255,255,255,0);padding-top: 10px;padding-bottom: 10px;font-weight: bold;color: rgb(119,119,119);"><strong>Berapa Lama Pembuatan?</strong></button>
+        <div class="panel"
+            style="background-color: rgba(255,255,255,0);">
+            <h6 class="text-left" style="font-size: 14px;line-height: 20px;margin-bottom: 15px;">Untuk lama pembuatan video 1-2 hari, tergantung antrian pekerjaan. Target kami sebelum hari raya idul Fitri Anda sudah menerima hasilnya. Mohon untuk bersabar menunggu untuk kualitas terbaik.</h6>
+        </div>
+    </div>
+    <div class="faqelement" style="border-radius: 10px;margin-bottom: 10px;background-color: #ffffff;"><button class="btn faq on" type="button" style="box-shadow: none;background-color: rgba(255,255,255,0);padding-top: 10px;padding-bottom: 10px;font-weight: bold;color: rgb(119,119,119);"><strong>Apa saja yang harus saya persiapkan?</strong></button>
+        <div
+            class="panel" style="background-color: rgba(255,255,255,0);">
+            <h6 class="text-left" style="font-size: 14px;line-height: 20px;margin-bottom: 15px;">Berikut ini beberapa hal yang bisa anda persiapkan sebelum memesan jasa video ucapan:<br><br><br><br>– Foto Anda yang ingin ditampilkan<br><br><br><br>– Kalimat ucapan / doa<br><br><br><br>– Pilih jenis template, warna dan audio yang diinginkan<br><br><br><br>Kebutuhan
+                lainnya bisa disesuaikan saat konsultasi dengan tim Decorasix</h6>
+    </div>
+    </div>
+    <div class="faqelement" style="border-radius: 10px;margin-bottom: 10px;background-color: #ffffff;"><button class="btn faq on" type="button" style="box-shadow: none;background-color: rgba(255,255,255,0);padding-top: 10px;padding-bottom: 10px;font-weight: bold;color: rgb(119,119,119);"><strong>Apa format file yang akan diterima ?</strong></button>
+        <div
+            class="panel" style="background-color: rgba(255,255,255,0);">
+            <h6 class="text-left" style="font-size: 14px;line-height: 20px;margin-bottom: 15px;">Klien akan menerima file hasil desain akhir dalam bentuk berikut ini:<br><br>*) Image – format file JPG atau PNG<br><br>*)Video – format file MP4</h6>
+    </div>
+    </div>
+    <div class="accordion" style="border-radius: 10px;margin-bottom: 10px;background-color: #ffffff;"><button class="btn faq on" type="button" style="box-shadow: none;background-color: rgba(255,255,255,0);padding-top: 10px;padding-bottom: 10px;font-weight: bold;color: rgb(119,119,119);"><strong>Apakah Boleh Revisi Videonya?</strong><br></button>
+        <div
+            class="panel" style="background-color: rgba(255,255,255,0);">
+            <h6 class="text-left" style="font-size: 14px;line-height: 20px;margin-bottom: 15px;">Tentu saja boleh, kami berikan maksimal 3x revisi minor seperti, ganti foto, teks atau warna. Bukan dengan ganti tema video ke yang lainnya.</h6>
+    </div>
+    </div><script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script></div>
     </div>
     <div class="col-sm-7 col-md-5 col-lg-4" style="box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);position: fixed;bottom: 0px;background-color: #ffffff;padding: 10px;width: 100%;" z-index="9999999999"><a class="btn btn-block" role="button" id="Contact2" style="background-image: linear-gradient(to bottom right, #68B34E, #0FAA4F);color: rgb(255,255,255);" href="https://api.whatsapp.com/send?phone=6283801153023&amp;text=Halo%2C%20Saya%20mau%20buat%20Video%20Ucapan%20Lebaran%20kak%20%F0%9F%98%8A"><i class="fa fa-whatsapp" style="font-size: 18px;"></i>&nbsp;Chat Admin via WA&nbsp;</a></div>
     </div><script>
